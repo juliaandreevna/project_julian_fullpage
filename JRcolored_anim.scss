@@ -1,0 +1,69 @@
+// $colors: #360745, #D61C59, #E7D84B, #EFEAC5, #1B8798;
+$colors:  #cf0000, #69f;
+
+.pl {
+  z-index: 999;
+  background-size: .12em 100%;
+  font: 5em/1 'Roboto', sans-serif;
+  transition: 0.3s 0.4s;
+
+}
+
+.pl_bg {
+  background-color: #c0c8ca;
+  opacity: 0.99;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 950;
+}
+
+.text--line {
+  font-size: 1.7em;
+  font-family: 'Roboto', sans-serif;
+  }
+
+svg.site_preloader {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  }
+
+$max: 2;
+$stroke-step: 7%; 
+.text-copy {
+  fill: none;
+  stroke: #e6e6e6;
+  stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
+  stroke-width: 3px;
+  
+  animation: stroke-offset 9s infinite linear;
+  
+  @for $item from 1 through $max {
+    $stroke-color: nth($colors, $item);
+    
+    &:nth-child(#{$item}) {
+      stroke: $stroke-color;
+      stroke-dashoffset: $stroke-step * $item;
+      }
+    }
+  }
+
+@keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: $stroke-step * $max;  
+    stroke-dasharray: 0 $stroke-step * $max*2.5;
+  }
+}
+
+
+.loaded .pl {
+  display: none;
+  transition: 0.3s;
+}
+
+.loaded .pl_bg {
+  display: none;
+  transition: 0.3s;
+}
