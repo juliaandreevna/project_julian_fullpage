@@ -85,7 +85,7 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                                                            src="/img/socials/tw.svg"></a></li>
         <li><a class="yt" href="<?= $social["yt"] ?>" target="_blank"><img class="svg"
                                                                            src="/img/socials/yt.svg"></a></li>
-        <li><a class="skype" href="#"> <img class="svg" src="/img/socials/skype.svg"></a></li>
+        <li><a class="skype" href="skype:<?php echo $skype; ?>"> <img class="svg" src="/img/socials/skype.svg"></a></li>
       </ul>
     </div>
     <div class="menu-sb">
