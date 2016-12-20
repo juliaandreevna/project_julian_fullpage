@@ -346,7 +346,15 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                       <img src="/img/albums/08-meri.jpg" alt=""/>
                       <figcaption style="-webkit-box-sizing: border-box; box-sizing: border-box;">
                         <p>Мэрилин<br><span>2016</span></p>
-                        <a href="#"></a>
+                        <a href="#meri"></a>
+                        <!-- This is the modal -->
+                        <div id="meri" class="uk-modal">
+                          <div class="uk-modal-dialog">
+                            <a class="uk-modal-close uk-close"></a>
+                            <!--   <i class="uk-icon-close uk-modal-close"></i>-->
+                            <iframe src="//tools.applemusic.com/embed/v1/album/1166308584?country=ru" height="500px" width="100%" frameborder="0"></iframe>
+                          </div>
+                        </div>
                       </figcaption>
                     </figure>
                   </div>
@@ -357,7 +365,15 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                       <img src="/img/albums/07-yata.jpg" alt=""/>
                       <figcaption style="-webkit-box-sizing: border-box; box-sizing: border-box;">
                         <p>Я так сильно тебя люблю<br><span>2010</span></p>
-                        <a href="#"></a>
+                        <a href="#yata"></a>
+                        <!-- This is the modal -->
+                        <div id="yata" class="uk-modal">
+                          <div class="uk-modal-dialog">
+                            <a class="uk-modal-close uk-close"></a>
+                            <!--   <i class="uk-icon-close uk-modal-close"></i>-->
+                            <iframe src="//tools.applemusic.com/embed/v1/album/1092570648?country=ru" height="500px" width="100%" frameborder="0"></iframe>
+                          </div>
+                        </div>
                       </figcaption>
                     </figure>
                   </div>
@@ -368,7 +384,15 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                       <img src="/img/albums/01-prob.jpg" alt=""/>
                       <figcaption style="-webkit-box-sizing: border-box; box-sizing: border-box;">
                         <p>Пробуждение<br><span>2003</span></p>
-                        <a href="#"></a>
+                        <a href="#prob"></a>
+                        <!-- This is the modal -->
+                        <div id="prob" class="uk-modal">
+                          <div class="uk-modal-dialog">
+                            <a class="uk-modal-close uk-close"></a>
+                            <!--   <i class="uk-icon-close uk-modal-close"></i>-->
+                            <iframe src="//tools.applemusic.com/embed/v1/album/1092578144?country=ru" height="500px" width="100%" frameborder="0"></iframe>
+                          </div>
+                        </div>
                       </figcaption>
                     </figure>
                   </div>
@@ -379,7 +403,15 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                       <img src="/img/albums/02-yana.jpg" alt=""/>
                       <figcaption style="-webkit-box-sizing: border-box; box-sizing: border-box;">
                         <p>Я на арбате продаю дожди<br><span>2002</span></p>
-                        <a href="#"></a>
+                        <a href="#yana"></a>
+                        <!-- This is the modal -->
+                        <div id="yana" class="uk-modal">
+                          <div class="uk-modal-dialog">
+                            <a class="uk-modal-close uk-close"></a>
+                            <!--   <i class="uk-icon-close uk-modal-close"></i>-->
+                            <iframe src="//tools.applemusic.com/embed/v1/album/1092570146?country=ru" height="500px" width="100%" frameborder="0"></iframe>
+                          </div>
+                        </div>
                       </figcaption>
                     </figure>
                   </div>
@@ -390,7 +422,15 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                       <img src="/img/albums/03-neve.jpg" alt=""/>
                       <figcaption style="-webkit-box-sizing: border-box; box-sizing: border-box;">
                         <p>Не верю в королей<br><span>1999</span></p>
-                        <a href="#"></a>
+                        <a href="#neve"></a>
+                        <!-- This is the modal -->
+                        <div id="neve" class="uk-modal">
+                          <div class="uk-modal-dialog">
+                            <a class="uk-modal-close uk-close"></a>
+                            <!--   <i class="uk-icon-close uk-modal-close"></i>-->
+                            <iframe src="//tools.applemusic.com/embed/v1/album/1092570915?country=ru" height="500px" width="100%" frameborder="0"></iframe>
+                          </div>
+                        </div>
                       </figcaption>
                     </figure>
                   </div>
@@ -401,7 +441,15 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                       <img src="/img/albums/04-tyta.jpg" alt=""/>
                       <figcaption style="-webkit-box-sizing: border-box; box-sizing: border-box;">
                         <p>Ты танцуешь, я пою<br><span>1996</span></p>
-                        <a href="#"></a>
+                        <a href="#tyta"></a>
+                        <!-- This is the modal -->
+                        <div id="tyta" class="uk-modal">
+                          <div class="uk-modal-dialog">
+                            <a class="uk-modal-close uk-close"></a>
+                            <!--   <i class="uk-icon-close uk-modal-close"></i>-->
+                            <iframe src="//tools.applemusic.com/embed/v1/album/1092573859?country=ru" height="500px" width="100%" frameborder="0"></iframe>
+                          </div>
+                        </div>
                       </figcaption>
                     </figure>
                   </div>
@@ -412,7 +460,15 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                       <img src="/img/albums/05-lubi.jpg" alt=""/>
                       <figcaption style="-webkit-box-sizing: border-box; box-sizing: border-box;">
                         <p>Люби меня<br><span>1995</span></p>
-                        <a href="#"></a>
+                        <a href="#lubi"></a>
+                        <!-- This is the modal -->
+                        <div id="lubi" class="uk-modal">
+                          <div class="uk-modal-dialog">
+                            <a class="uk-modal-close uk-close"></a>
+                            <!--   <i class="uk-icon-close uk-modal-close"></i>-->
+                            <iframe src="//tools.applemusic.com/embed/v1/album/1092554463?country=ru" height="500px" width="100%" frameborder="0"></iframe>
+                          </div>
+                        </div>
                       </figcaption>
                     </figure>
                   </div>
@@ -429,7 +485,7 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                           <div class="uk-modal-dialog">
                             <a class="uk-modal-close uk-close"></a>
                             <!--   <i class="uk-icon-close uk-modal-close"></i>-->
-                            <iframe src="//tools.applemusic.com/embed/v1/album/1092573859?country=ru" height="500px" width="100%" frameborder="0"></iframe>
+                            <iframe src="//tools.applemusic.com/embed/v1/album/1092568817?country=ru" height="500px" width="100%" frameborder="0"></iframe>
                           </div>
                         </div>
                       </figcaption>
@@ -966,7 +1022,7 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
       <!------------->
       <section class="vertical-scrolling">
         <h2>Форум</h2>
-        <h3>This is the fourth section</h3>
+<!--        <h3>This is the fourth section</h3>-->
       </section>
       <!-------------->
       <!-- Contacts -->
