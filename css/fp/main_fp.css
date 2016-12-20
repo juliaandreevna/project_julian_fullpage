@@ -267,7 +267,7 @@
 
 html, body {
     /*background: #EEE url(/img/bg1.jpg) no-repeat;*/
-    background: #EEE url(../img/bg1.jpg) no-repeat;
+    background: url(/img/bg1.jpg) no-repeat;
     background-size: cover;
     height: 100%;
     font-family: 'Roboto', sans-serif;

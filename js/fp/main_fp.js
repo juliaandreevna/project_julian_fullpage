@@ -26,7 +26,8 @@ $(document).ready(function(){
 
     css3: true,
     controlArrows: false,
-    anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
+    // anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
+    anchors: ['Home', 'News', 'Julian', 'Forum', 'Contacts'],
     menu: '#menu',
 
     afterLoad: function(anchorLink, index) {
@@ -44,7 +45,7 @@ $(document).ready(function(){
     },
 
     afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
-      if(anchorLink == 'fifthSection' && slideIndex == 1) {
+      if(anchorLink == 'Contacts' && slideIndex == 1) {
         $.fn.fullpage.setAllowScrolling(false, 'up');
         $header_top.css('background', 'transparent');
         $nav.css('background', 'transparent');
@@ -62,7 +63,7 @@ $(document).ready(function(){
     },
 
     onSlideLeave: function( anchorLink, index, slideIndex, direction) {
-      if(anchorLink == 'fifthSection' && slideIndex == 1) {
+      if(anchorLink == 'Contacts' && slideIndex == 1) {
         $.fn.fullpage.setAllowScrolling(true, 'up');
         $header_top.css('background', 'rgba(0, 47, 77, .3)');
         $nav.css('background', 'rgba(0, 47, 77, .25)');

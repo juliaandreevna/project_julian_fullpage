@@ -5,7 +5,7 @@ $page_id = "index";
 require_once($home_dir . "/includes/contacts.php");
 $page_title = "Главная";
 $page_suffix = "Julian Radio - ";
-require_once($home_dir . "/includes/ya-news.php");
+//require_once($home_dir . "/includes/ya-news.php");
 $notices = collection("Анонсы")->find(["public" => true])->toArray();
 $videos = collection("Видеогалерея")->find(["public" => true])->toArray();
 $entrys = collection("Биография")->find(["public" => true])->sort(["sort" => 1])->toArray();
@@ -15,7 +15,6 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
 <html class="no-js" lang="ru">
 <head>
     <?php require($home_dir . "/includes/top-scripts.php"); ?>
-
 </head>
 <body>
 
@@ -327,11 +326,13 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                 <div class="all_news">
                                     <ul class="notices">
                                         <li>
-                                            <!--                    <p>Все новости: Повторное голосование на EUROVISION 2016 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>-->
-                                            <?php foreach ($ya_news as $ya_new) { ?>
-                                                <p><?php echo $ya_new["name"]; ?>
-                                                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
-                                            <?php }; ?>
+                                                                <p>Все новости: Повторное голосование на EUROVISION 2016 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                                                                <p>Все новости: Повторное голосование на EUROVISION 2016 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                                                                <p>Все новости: Повторное голосование на EUROVISION 2016 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+<!--                                            --><?php //foreach ($ya_news as $ya_new) { ?>
+<!--                                                <p>--><?php //echo $ya_new["name"]; ?>
+<!--                                                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>-->
+<!--                                            --><?php //}; ?>
                                         </li>
                                     </ul>
                                 </div>
