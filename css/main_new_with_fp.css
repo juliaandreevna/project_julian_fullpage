@@ -16,6 +16,10 @@ html, body {
     */
 }
 
+.modal_fixed {
+    background-color: #;
+}
+
 /*СОЦ.СЕТИ*/
 
 .socials-sb {
@@ -1030,10 +1034,10 @@ img.play_img {
 
 /*ЭФФЕКТ ДЛЯ ГРИДА АЛЬБОМОВ*/
 
-.audio_page_cont figcaption, .audio_page_cont figcaption:after, .audio_page_cont figcaption:before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
+/*.audio_panel>ul>li>.album_panel.grid>figure>figcaption, .album_panel figcaption:after, .album_panel figcaption:before {*/
+    /*-webkit-box-sizing: border-box!important;*/
+    /*box-sizing: border-box!important;*/
+/*}*/
 
 .clearfix:before, .clearfix:after {
     display: table;
@@ -1045,7 +1049,12 @@ img.play_img {
 }
 
 .mt {
-    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.audio_panel ul:nth-child(2) {
+    position: relative;
+    top: 30px;
 }
 
 .effect-apollo, .effect-apollo h2 {
@@ -1081,6 +1090,11 @@ img.play_img {
 /*.uk-modal-dialog>.uk-close:first-child {*/
     /*margin: -20px 0px 0 0;*/
 /*}*/
+
+.audio_panel .uk-modal-dialog {
+    position: fixed;
+    left: 7%;
+}
 
 
 /*-------------------*/

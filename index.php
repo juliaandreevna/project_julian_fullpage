@@ -182,7 +182,7 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                 <div class="julian_news">
                                     <ul class="notices">
                                         <li>
-                                            <!--                    <p>Новости Julian: Премьера нового альбома 2016 - лето! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>-->
+                                            <!--  <p>Новости Julian: Премьера нового альбома 2016 - лето! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>-->
                                             <?php foreach ($notices as $notice) { ?>
                                                 <p><?php echo $notice["text"]; ?>
                                                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
