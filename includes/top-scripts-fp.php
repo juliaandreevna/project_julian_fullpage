@@ -26,7 +26,7 @@
 <!------------->
 <!--preloader-->
 <!------------->
-<link rel="stylesheet" href="/JRcolored_anim.css">
+<link rel="stylesheet" href="/preloader/JRcolored_anim.css">
 <!------------->
 
 

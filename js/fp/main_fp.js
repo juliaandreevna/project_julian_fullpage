@@ -1,4 +1,15 @@
 $(document).ready(function(){
+
+  $('.modalSelector').on({
+
+    'show.uk.modal': function(){
+      console.log("Modal is visible.");
+    },
+
+    'hide.uk.modal': function(){
+      console.log("Element is not visible.");
+    }
+  });
   
   // variables
   var $header_top = $('.header-top');
@@ -39,9 +50,7 @@ $(document).ready(function(){
     },
 
     onLeave: function(index, nextIndex, direction) {
-      if(index == 5) {
-        $('#fp-nav').show();
-      }
+
     },
 
     afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
