@@ -313,7 +313,13 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
             class="sect news_page">
             <h3 class="uk-text-center h3_section">Новости</h3>
             <div class="uk-panel uk-panel-box my_panel news_panel">
-                <ul class="uk-grid uk-grid-collapse uk-grid-width-small-1-1 uk-grid-width-medium-1-1 uk-grid-width-large-1-2">
+                <ul class="uk-grid uk-grid-collapse uk-grid-width-small-1-1 uk-grid-width-medium-1-1 uk-grid-width-large-1-3">
+                    <li>
+                        <div class="fb_news">
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=300&height=450&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="300" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                        </div>
+                    </li>
+                    
                     <li>
                         <div class="greatest_news ">
 
@@ -322,14 +328,16 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
 
                     <li>
                         <div class="fb_news">
-                            <iframe
-                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=400&height=470&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId"
-                                width="400" height="450" style="border:none;overflow:hidden"
-                                scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                            <a class="twitter-timeline" data-lang="ru" data-width="300" data-height="450" data-theme="light" data-link-color="#2B7BB9" href="https://twitter.com/julian_radio">Tweets by julian_radio</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<!--                            <iframe-->
+<!--                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=400&height=470&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId"-->
+<!--                                width="300" height="450" style="border:none;overflow:hidden"-->
+<!--                                scrolling="no" frameborder="0" allowTransparency="true"></iframe>-->
                         </div>
                     </li>
                 </ul>
-
             </div>
         </div>
     </section>
@@ -355,18 +363,8 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                 <figure class="effect-apollo">
                                     <img src="/img/albums/08-meri.jpg" alt=""/>
                                     <figcaption style="-webkit-box-sizing: border-box; box-sizing: border-box;">
-                                        <p>День рождения<br><span>1994</span></p>
+                                        <p>Мэрилин<br><span>2016</span></p>
                                         <a href="#meri" data-uk-modal></a>
-                                        <!-- This is the modal -->
-                                        <div id="meri" class="uk-modal">
-                                            <div class="uk-modal-dialog">
-                                                <a class="uk-modal-close uk-close"></a>
-                                                <!--   <i class="uk-icon-close uk-modal-close"></i>-->
-                                                <iframe
-                                                    src="//tools.applemusic.com/embed/v1/album/1166308584?country=ru"
-                                                    height="500px" width="100%" frameborder="0"></iframe>
-                                            </div>
-                                        </div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -376,18 +374,8 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                 <figure class="effect-apollo">
                                     <img src="/img/albums/07-yata.jpg" alt=""/>
                                     <figcaption style="-webkit-box-sizing: border-box; box-sizing: border-box;">
-                                        <p>День рождения<br><span>1994</span></p>
+                                        <p>Я так сильно тебя люблю<br><span>2010</span></p>
                                         <a href="#yata" data-uk-modal></a>
-                                        <!-- This is the modal -->
-                                        <div id="yata" class="uk-modal">
-                                            <div class="uk-modal-dialog">
-                                                <a class="uk-modal-close uk-close"></a>
-                                                <!--   <i class="uk-icon-close uk-modal-close"></i>-->
-                                                <iframe
-                                                    src="//tools.applemusic.com/embed/v1/album/1092570648?country=ru"
-                                                    height="500px" width="100%" frameborder="0"></iframe>
-                                            </div>
-                                        </div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -397,18 +385,8 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                 <figure class="effect-apollo">
                                     <img src="/img/albums/01-prob.jpg" alt=""/>
                                     <figcaption style="-webkit-box-sizing: border-box; box-sizing: border-box;">
-                                        <p>День рождения<br><span>1994</span></p>
+                                        <p>Пробуждение<br><span>2003</span></p>
                                         <a href="#prob" data-uk-modal></a>
-                                        <!-- This is the modal -->
-                                        <div id="prob" class="uk-modal">
-                                            <div class="uk-modal-dialog">
-                                                <a class="uk-modal-close uk-close"></a>
-                                                <!--   <i class="uk-icon-close uk-modal-close"></i>-->
-                                                <iframe
-                                                    src="//tools.applemusic.com/embed/v1/album/1092578144?country=ru"
-                                                    height="500px" width="100%" frameborder="0"></iframe>
-                                            </div>
-                                        </div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -418,18 +396,8 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                 <figure class="effect-apollo">
                                     <img src="/img/albums/02-yana.jpg" alt=""/>
                                     <figcaption style="-webkit-box-sizing: border-box; box-sizing: border-box;">
-                                        <p>День рождения<br><span>1994</span></p>
+                                        <p>Я на арбате продаю дожди<br><span>2002</span></p>
                                         <a href="#yana" data-uk-modal></a>
-                                        <!-- This is the modal -->
-                                        <div id="yana" class="uk-modal">
-                                            <div class="uk-modal-dialog">
-                                                <a class="uk-modal-close uk-close"></a>
-                                                <!--   <i class="uk-icon-close uk-modal-close"></i>-->
-                                                <iframe
-                                                    src="//tools.applemusic.com/embed/v1/album/1092570146?country=ru"
-                                                    height="500px" width="100%" frameborder="0"></iframe>
-                                            </div>
-                                        </div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -439,18 +407,8 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                 <figure class="effect-apollo">
                                     <img src="/img/albums/03-neve.jpg" alt=""/>
                                     <figcaption style="-webkit-box-sizing: border-box; box-sizing: border-box;">
-                                        <p>День рождения<br><span>1994</span></p>
+                                        <p>Не верю в королей<br><span>1999</span></p>
                                         <a href="#neve" data-uk-modal></a>
-                                        <!-- This is the modal -->
-                                        <div id="neve" class="uk-modal">
-                                            <div class="uk-modal-dialog">
-                                                <a class="uk-modal-close uk-close"></a>
-                                                <!--   <i class="uk-icon-close uk-modal-close"></i>-->
-                                                <iframe
-                                                    src="//tools.applemusic.com/embed/v1/album/1092570915?country=ru"
-                                                    height="500px" width="100%" frameborder="0"></iframe>
-                                            </div>
-                                        </div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -460,18 +418,8 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                 <figure class="effect-apollo">
                                     <img src="/img/albums/04-tyta.jpg" alt=""/>
                                     <figcaption style="-webkit-box-sizing: border-box; box-sizing: border-box;">
-                                        <p>День рождения<br><span>1994</span></p>
+                                        <p>Ты танцуешь, я пою<br><span>1996</span></p>
                                         <a href="#tyta" data-uk-modal></a>
-                                        <!-- This is the modal -->
-                                        <div id="tyta" class="uk-modal">
-                                            <div class="uk-modal-dialog">
-                                                <a class="uk-modal-close uk-close"></a>
-                                                <!--   <i class="uk-icon-close uk-modal-close"></i>-->
-                                                <iframe
-                                                    src="//tools.applemusic.com/embed/v1/album/1092573859?country=ru"
-                                                    height="500px" width="100%" frameborder="0"></iframe>
-                                            </div>
-                                        </div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -481,18 +429,8 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                 <figure class="effect-apollo">
                                     <img src="/img/albums/05-lubi.jpg" alt=""/>
                                     <figcaption style="-webkit-box-sizing: border-box; box-sizing: border-box;">
-                                        <p>День рождения<br><span>1994</span></p>
+                                        <p>Люби меня<br><span>1995</span></p>
                                         <a href="#lubi" data-uk-modal></a>
-                                        <!-- This is the modal -->
-                                        <div id="lubi" class="uk-modal">
-                                            <div class="uk-modal-dialog">
-                                                <a class="uk-modal-close uk-close"></a>
-                                                <!--   <i class="uk-icon-close uk-modal-close"></i>-->
-                                                <iframe
-                                                    src="//tools.applemusic.com/embed/v1/album/1092554463?country=ru"
-                                                    height="500px" width="100%" frameborder="0"></iframe>
-                                            </div>
-                                        </div>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -504,23 +442,12 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                     <figcaption style="-webkit-box-sizing: border-box; box-sizing: border-box;">
                                         <p>День рождения<br><span>1994</span></p>
                                         <a href="#denj" data-uk-modal></a>
-                                        <!-- This is the modal -->
-                                        <div id="denj" class="uk-modal">
-                                            <div class="uk-modal-dialog">
-                                                <a class="uk-modal-close uk-close"></a>
-                                                <!--   <i class="uk-icon-close uk-modal-close"></i>-->
-                                                <iframe
-                                                    src="//tools.applemusic.com/embed/v1/album/1092568817?country=ru"
-                                                    height="500px" width="100%" frameborder="0"></iframe>
-                                            </div>
-                                        </div>
                                     </figcaption>
                                 </figure>
                             </div>
                         </li>
                     </ul>
                 </div>
-
             </div>
         </div>
         <!------------->
@@ -627,6 +554,126 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                 </figure>
                             </li>
                             <li data-uk-filter="filter-vd">
+                                <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                    <a href="https://youtu.be/Msfbb5-W4e0"
+                                       data-uk-lightbox="{group:'video_group'}">
+                                        <img
+                                            src="http://img.youtube.com/vi/Msfbb5-W4e0/0.jpg"
+                                            alt="Название">
+                                        <figcaption
+                                            class="uk-overlay-panel uk-overlay-background">
+                                            <h3>Название</h3>
+                                            <p>Описание</p>
+                                        </figcaption>
+                                    </a>
+                                </figure>
+                            </li>
+                            <li data-uk-filter="filter-vf">
+                                <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                    <a href="https://youtu.be/Msfbb5-W4e0"
+                                       data-uk-lightbox="{group:'video_group'}">
+                                        <img
+                                            src="http://img.youtube.com/vi/Msfbb5-W4e0/0.jpg"
+                                            alt="Название">
+                                        <figcaption
+                                            class="uk-overlay-panel uk-overlay-background">
+                                            <h3>Название</h3>
+                                            <p>Описание</p>
+                                        </figcaption>
+                                    </a>
+                                </figure>
+                            </li>
+                            <li data-uk-filter="filter-vf">
+                                <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                    <a href="https://youtu.be/Msfbb5-W4e0"
+                                       data-uk-lightbox="{group:'video_group'}">
+                                        <img
+                                            src="http://img.youtube.com/vi/Msfbb5-W4e0/0.jpg"
+                                            alt="Название">
+                                        <figcaption
+                                            class="uk-overlay-panel uk-overlay-background">
+                                            <h3>Название</h3>
+                                            <p>Описание</p>
+                                        </figcaption>
+                                    </a>
+                                </figure>
+                            </li>
+                            <li data-uk-filter="filter-vf">
+                                <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                    <a href="https://youtu.be/Msfbb5-W4e0"
+                                       data-uk-lightbox="{group:'video_group'}">
+                                        <img
+                                            src="http://img.youtube.com/vi/Msfbb5-W4e0/0.jpg"
+                                            alt="Название">
+                                        <figcaption
+                                            class="uk-overlay-panel uk-overlay-background">
+                                            <h3>Название</h3>
+                                            <p>Описание</p>
+                                        </figcaption>
+                                    </a>
+                                </figure>
+                            </li>
+                            <li data-uk-filter="filter-vf">
+                                <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                    <a href="https://youtu.be/Msfbb5-W4e0"
+                                       data-uk-lightbox="{group:'video_group'}">
+                                        <img
+                                            src="http://img.youtube.com/vi/Msfbb5-W4e0/0.jpg"
+                                            alt="Название">
+                                        <figcaption
+                                            class="uk-overlay-panel uk-overlay-background">
+                                            <h3>Название</h3>
+                                            <p>Описание</p>
+                                        </figcaption>
+                                    </a>
+                                </figure>
+                            </li>
+                            <li data-uk-filter="filter-vf">
+                                <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                    <a href="https://youtu.be/Msfbb5-W4e0"
+                                       data-uk-lightbox="{group:'video_group'}">
+                                        <img
+                                            src="http://img.youtube.com/vi/Msfbb5-W4e0/0.jpg"
+                                            alt="Название">
+                                        <figcaption
+                                            class="uk-overlay-panel uk-overlay-background">
+                                            <h3>Название</h3>
+                                            <p>Описание</p>
+                                        </figcaption>
+                                    </a>
+                                </figure>
+                            </li>
+                            <li data-uk-filter="filter-vf">
+                                <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                    <a href="https://youtu.be/Msfbb5-W4e0"
+                                       data-uk-lightbox="{group:'video_group'}">
+                                        <img
+                                            src="http://img.youtube.com/vi/Msfbb5-W4e0/0.jpg"
+                                            alt="Название">
+                                        <figcaption
+                                            class="uk-overlay-panel uk-overlay-background">
+                                            <h3>Название</h3>
+                                            <p>Описание</p>
+                                        </figcaption>
+                                    </a>
+                                </figure>
+                            </li>
+                            <li data-uk-filter="filter-vf">
+                                <figure class="uk-panel uk-overlay uk-overlay-hover">
+                                    <a href="https://youtu.be/Msfbb5-W4e0"
+                                       data-uk-lightbox="{group:'video_group'}">
+                                        <img
+                                            src="http://img.youtube.com/vi/Msfbb5-W4e0/0.jpg"
+                                            alt="Название">
+                                        <figcaption
+                                            class="uk-overlay-panel uk-overlay-background">
+                                            <h3>Название</h3>
+                                            <p>Описание</p>
+                                        </figcaption>
+                                    </a>
+                                </figure>
+                            </li>
+                            <li data-uk-filter="filter-vf">
                                 <figure class="uk-panel uk-overlay uk-overlay-hover">
                                     <a href="https://youtu.be/Msfbb5-W4e0"
                                        data-uk-lightbox="{group:'video_group'}">
@@ -1140,28 +1187,11 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
                                     </div>
                                 </li>
                             </ul>
-                            <!--                                                <input type="submit" class="dev-but-footer" value="отправить">-->
-                            <input type="submit" class="uk-button ord_button" value="Отправить"
-                                   data-uk-modal="{target:'#sent'}">
-
-                            <!--                                                <button class="uk-button ord_button"-->
-                            <!--                                                        data-uk-modal="{target:'#song'}">-->
-                            <!--                                                    Заказать песню-->
-                            <!--                                                </button>-->
+                            <input type="submit" class="uk-button ord_button" value="Отправить">
+<!--                            <input type="submit" class="uk-button ord_button" value="Отправить"-->
+<!--                                   data-uk-modal="{target:'#sent'}">-->
 
                             </form>
-                            <!--                  --><? // require($home_dir . "/includes/modal_window_send.php"); ?>
-<!--                                              <div id="sent" class="uk-modal">-->
-<!--                                                <div class="uk-modal-dialog">-->
-<!--                                                  <a class="uk-modal-close uk-close"></a>-->
-<!--                                                  <h3>Ваше письмо отправлено!</h3>-->
-<!--                                                  <a class="uk-modal-close">Закрыть</a>-->
-<!--                                                </div>-->
-<!--                                              </div>-->
-
-                            <div class="modal_fixed">
-
-                            </div>
 
 
                         </div>
@@ -1172,6 +1202,101 @@ $entrys = collection("Биография")->find(["public" => true])->sort(["sor
     </section>
 
 </div>
+
+<!--модульные окана плеера-->
+
+<div id="meri" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+        <!--   <i class="uk-icon-close uk-modal-close"></i>-->
+        <iframe
+            src="//tools.applemusic.com/embed/v1/album/1166308584?country=ru"
+            height="500px" width="100%" frameborder="0"></iframe>
+    </div>
+</div>
+<div id="yata" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+        <!--   <i class="uk-icon-close uk-modal-close"></i>-->
+        <iframe
+            src="//tools.applemusic.com/embed/v1/album/1092570648?country=ru"
+            height="500px" width="100%" frameborder="0"></iframe>
+    </div>
+</div>
+<div id="prob" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+        <!--   <i class="uk-icon-close uk-modal-close"></i>-->
+        <iframe
+            src="//tools.applemusic.com/embed/v1/album/1092578144?country=ru"
+            height="500px" width="100%" frameborder="0"></iframe>
+    </div>
+</div>
+<div id="yana" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+        <!--   <i class="uk-icon-close uk-modal-close"></i>-->
+        <iframe
+            src="//tools.applemusic.com/embed/v1/album/1092570146?country=ru"
+            height="500px" width="100%" frameborder="0"></iframe>
+    </div>
+</div>
+<div id="neve" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+        <!--   <i class="uk-icon-close uk-modal-close"></i>-->
+        <iframe
+            src="//tools.applemusic.com/embed/v1/album/1092570915?country=ru"
+            height="500px" width="100%" frameborder="0"></iframe>
+    </div>
+</div>
+<div id="tyta" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+        <!--   <i class="uk-icon-close uk-modal-close"></i>-->
+        <iframe
+            src="//tools.applemusic.com/embed/v1/album/1092573859?country=ru"
+            height="500px" width="100%" frameborder="0"></iframe>
+    </div>
+</div>
+<div id="lubi" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+        <!--   <i class="uk-icon-close uk-modal-close"></i>-->
+        <iframe
+            src="//tools.applemusic.com/embed/v1/album/1092554463?country=ru"
+            height="500px" width="100%" frameborder="0"></iframe>
+    </div>
+</div>
+<div id="denj" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+        <!--   <i class="uk-icon-close uk-modal-close"></i>-->
+        <iframe
+            src="//tools.applemusic.com/embed/v1/album/1092568817?country=ru"
+            height="500px" width="100%" frameborder="0"></iframe>
+    </div>
+</div>
+
+<!--модульное отправлено-->
+
+<? require($home_dir . "/includes/modal_window_send.php"); ?>
+
+
+<!--<div id="sent" class="uk-modal">-->
+<!--    <div class="uk-modal-dialog">-->
+<!--        <a class="uk-modal-close uk-close"></a>-->
+<!--        <h3>Ваше письмо отправлено!</h3>-->
+<!--        <a class="uk-modal-close">Закрыть</a>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+
+
+
+
+
 
 
 <!-- js files -->

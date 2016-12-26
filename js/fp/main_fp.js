@@ -50,33 +50,51 @@ $(document).ready(function(){
     },
 
     onLeave: function(index, nextIndex, direction) {
-
-    },
-
-    afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
-      if(anchorLink == 'Contacts' && slideIndex == 1) {
-        $.fn.fullpage.setAllowScrolling(false, 'up');
-        $header_top.css('background', 'transparent');
-        $nav.css('background', 'transparent');
-        $(this).css('background', '#374140');
-        $(this).find('h2').css('color', 'white');
-        $(this).find('h3').css('color', 'white');
-        $(this).find('p').css(
-          {
-            'color': '#DC3522',
-            'opacity': 1,
-            'transform': 'translateY(0)'
-          }
-        );
+      // console.log (index+' '+nextIndex+' '+direction);
+      // исключение для горизонтального скрола
+      //console.dir($.fn.fullpage);
+      if (index==3 && (nextIndex == 4 || nextIndex == 2)){
+        //console.log ('скролим горизонтально');
+        //console.dir($.fn.fullpage);
+        //e.stopImmediatePropagation();
+        if (direction == "down" && window.location.hash.substring(1) != "Julian/3" && window.location.hash.substring(1) != "Forum"){
+          $.fn.fullpage.moveSlideRight();
+          return false;
+        }
+        else if (direction == "up" && (window.location.hash.substring(1) != "Julian" && window.location.hash.substring(1) != "News")){
+          $.fn.fullpage.moveSlideLeft();
+          return false;
+        }
       }
     },
 
+    afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
+      // if(anchorLink == 'Contacts' && slideIndex == 1) {
+      //   $.fn.fullpage.setAllowScrolling(false, 'up');
+      //   $header_top.css('background', 'transparent');
+      //   $nav.css('background', 'transparent');
+      //   $(this).css('background', '#374140');
+      //   $(this).find('h2').css('color', 'white');
+      //   $(this).find('h3').css('color', 'white');
+      //   $(this).find('p').css(
+      //     {
+      //       'color': '#DC3522',
+      //       'opacity': 1,
+      //       'transform': 'translateY(0)'
+      //     }
+      //   );
+      // }
+    },
+
     onSlideLeave: function( anchorLink, index, slideIndex, direction) {
+
+      /*
       if(anchorLink == 'Contacts' && slideIndex == 1) {
         $.fn.fullpage.setAllowScrolling(true, 'up');
         $header_top.css('background', 'rgba(0, 47, 77, .3)');
         $nav.css('background', 'rgba(0, 47, 77, .25)');
       }
+      */
     }
   });
 
