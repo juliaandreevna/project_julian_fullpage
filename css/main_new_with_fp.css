@@ -1551,6 +1551,11 @@ img.play_img {
     left: 7%;
 }
 
+
+.audio_modal>.uk-modal-dialog>.uk-close:first-child {
+    margin: -17px -17px 0 0;
+}
+
 /*-------------------*/
 /*СТРАНИЦА ВИДЕО*/
 /*-------------------*/

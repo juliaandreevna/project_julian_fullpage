@@ -934,7 +934,7 @@ $photos = collection("Фотогалерея")->find()->toArray();
 
 <!--модульные окана плеера-->
 
-<div id="meri" class="uk-modal">
+<div id="meri" class="uk-modal audio_modal">
     <div class="uk-modal-dialog">
         <a class="uk-modal-close uk-close"></a>
         <!--   <i class="uk-icon-close uk-modal-close"></i>-->
@@ -943,7 +943,7 @@ $photos = collection("Фотогалерея")->find()->toArray();
             height="500px" width="100%" frameborder="0"></iframe>
     </div>
 </div>
-<div id="yata" class="uk-modal">
+<div id="yata" class="uk-modal audio_modal">
     <div class="uk-modal-dialog">
         <a class="uk-modal-close uk-close"></a>
         <!--   <i class="uk-icon-close uk-modal-close"></i>-->
@@ -952,7 +952,7 @@ $photos = collection("Фотогалерея")->find()->toArray();
             height="500px" width="100%" frameborder="0"></iframe>
     </div>
 </div>
-<div id="prob" class="uk-modal">
+<div id="prob" class="uk-modal audio_modal">
     <div class="uk-modal-dialog">
         <a class="uk-modal-close uk-close"></a>
         <!--   <i class="uk-icon-close uk-modal-close"></i>-->
@@ -961,7 +961,7 @@ $photos = collection("Фотогалерея")->find()->toArray();
             height="500px" width="100%" frameborder="0"></iframe>
     </div>
 </div>
-<div id="yana" class="uk-modal">
+<div id="yana" class="uk-modal audio_modal">
     <div class="uk-modal-dialog">
         <a class="uk-modal-close uk-close"></a>
         <!--   <i class="uk-icon-close uk-modal-close"></i>-->
@@ -970,7 +970,7 @@ $photos = collection("Фотогалерея")->find()->toArray();
             height="500px" width="100%" frameborder="0"></iframe>
     </div>
 </div>
-<div id="neve" class="uk-modal">
+<div id="neve" class="uk-modal audio_modal">
     <div class="uk-modal-dialog">
         <a class="uk-modal-close uk-close"></a>
         <!--   <i class="uk-icon-close uk-modal-close"></i>-->
@@ -979,7 +979,7 @@ $photos = collection("Фотогалерея")->find()->toArray();
             height="500px" width="100%" frameborder="0"></iframe>
     </div>
 </div>
-<div id="tyta" class="uk-modal">
+<div id="tyta" class="uk-modal audio_modal">
     <div class="uk-modal-dialog">
         <a class="uk-modal-close uk-close"></a>
         <!--   <i class="uk-icon-close uk-modal-close"></i>-->
@@ -988,7 +988,7 @@ $photos = collection("Фотогалерея")->find()->toArray();
             height="500px" width="100%" frameborder="0"></iframe>
     </div>
 </div>
-<div id="lubi" class="uk-modal">
+<div id="lubi" class="uk-modal audio_modal">
     <div class="uk-modal-dialog">
         <a class="uk-modal-close uk-close"></a>
         <!--   <i class="uk-icon-close uk-modal-close"></i>-->
@@ -997,7 +997,7 @@ $photos = collection("Фотогалерея")->find()->toArray();
             height="500px" width="100%" frameborder="0"></iframe>
     </div>
 </div>
-<div id="denj" class="uk-modal">
+<div id="denj" class="uk-modal audio_modal">
     <div class="uk-modal-dialog">
         <a class="uk-modal-close uk-close"></a>
         <!--   <i class="uk-icon-close uk-modal-close"></i>-->
