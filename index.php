@@ -7,10 +7,12 @@ $page_title = "Главная";
 $page_suffix = "Julian Radio - ";
 //require_once($home_dir . "/includes/ya-news.php");
 $notices = collection("Анонсы")->find(["public" => true])->toArray();
-$videos = collection("Видеогалерея")->find(["public" => true])->toArray();
 $entrys = collection("Биография")->find(["public" => true])->sort(["sort" => 1])->toArray();
 
 $vid_categories = collection("Категории видео")->find(["show" => true])->sort(["sort" => 1])->toArray();
+$videos = collection("Видеогалерея")->find(["public" => true])->toArray();
+
+$photos = collection("Фотогалерея")->find()->toArray();
 
 //print_r($vid_categories);
 //print_r($videos);
@@ -478,21 +480,21 @@ $vid_categories = collection("Категории видео")->find(["show" => t
                             <?php }; ?>
 
 
-                            <li data-uk-filter="filter-va">
-                                <figure class="uk-panel uk-overlay uk-overlay-hover">
-                                    <a href="https://youtu.be/Msfbb5-W4e0"
-                                       data-uk-lightbox="{group:'video_group'}">
-                                        <img
-                                            src="http://img.youtube.com/vi/Msfbb5-W4e0/0.jpg"
-                                            alt="Название">
-                                        <figcaption
-                                            class="uk-overlay-panel uk-overlay-background">
-                                            <h3>Название</h3>
-                                            <p>Описание</p>
-                                        </figcaption>
-                                    </a>
-                                </figure>
-                            </li>
+<!--                            <li data-uk-filter="filter-va">-->
+<!--                                <figure class="uk-panel uk-overlay uk-overlay-hover">-->
+<!--                                    <a href="https://youtu.be/Msfbb5-W4e0"-->
+<!--                                       data-uk-lightbox="{group:'video_group'}">-->
+<!--                                        <img-->
+<!--                                            src="http://img.youtube.com/vi/Msfbb5-W4e0/0.jpg"-->
+<!--                                            alt="Название">-->
+<!--                                        <figcaption-->
+<!--                                            class="uk-overlay-panel uk-overlay-background">-->
+<!--                                            <h3>Название</h3>-->
+<!--                                            <p>Описание</p>-->
+<!--                                        </figcaption>-->
+<!--                                    </a>-->
+<!--                                </figure>-->
+<!--                            </li>-->
 
                         </ul>
                         <!--                <a href="#" class="uk-slidenav uk-slidenav-previous"-->
@@ -516,27 +518,33 @@ $vid_categories = collection("Категории видео")->find(["show" => t
                     <!-- Filter Controls -->
                     <ul id="photo-filter" class="uk-subnav uk-subnav-pill">
                         <li data-uk-filter=""><a href="">Все</a></li>
-                        <li data-uk-filter="filter-a"><a href="">Фотосессии</a></li>
-                        <li data-uk-filter="filter-b"><a href="">Концерты</a></li>
-                        <!--                                                <li data-uk-filter="filter-c"><a href="">Личное</a></li>-->
+                        <? foreach($photos as $photo_album){ ?>
+                        <li data-uk-filter="<?=$photo_album["_id"]?>"><a href=""><?=$photo_album["name"]?></a></li>
+                        <? } ?>
                     </ul>
                     <div class="uk-slidenav-position uk-float-left photo_slidenav">
                         <!-- Dynamic Grid -->
                         <ul class="uk-slideset uk-grid uk-grid-small uk-grid-width-1-6 "
                             data-uk-grid-margin="{cls:'mtr'}">
-                            <li data-uk-filter="filter-c">
+                            <?
+                            foreach($photos as $item){
+                                foreach($item["photos"] as $photo){
+                            ?>
+                            <li data-uk-filter="<?=$item["_id"]?>">
                                 <figure class="uk-panel uk-overlay uk-overlay-hover">
-                                    <a href="/img/albums/04-tyta.jpg"
+                                    <a href="/<?php echo substr($photo["path"], 5); ?>"
                                        data-uk-lightbox="{group:'my-group'}">
-                                        <img src="/img/albums/01-prob.jpg" alt="">
+                                        <img src="<?=thumbnail_url($photo["path"], 300, 300, ["mode"=>"crop"])?>" alt="">
                                         <figcaption
                                             class="uk-overlay-panel uk-overlay-background">
-                                            <h3>Обложка</h3>
-                                            <p>Ты танцуешь, я пою</p>
+<!--                                            <h3 style="text-align: right">--><?php //echo $photo["title"]; ?><!--</h3>-->
+                                            <p style="text-align: right"><?php echo $photo["title"]; ?></p>
                                         </figcaption>
                                     </a>
                                 </figure>
                             </li>
+                            <? } } ?>
+                            <!--
                             <li data-uk-filter="filter-a">
                                 <figure class="uk-panel uk-overlay uk-overlay-hover"><a
                                         href="/img/albums/04-tyta.jpg"
@@ -771,6 +779,7 @@ $vid_categories = collection("Категории видео")->find(["show" => t
                                             class="uk-overlay-panel uk-overlay-background"></figcaption>
                                     </a></figure>
                             </li>
+                            -->
                         </ul>
                         <!--                <a href="#" class="uk-slidenav uk-slidenav-previous"-->
                         <!--                   data-uk-slideset-item="previous"></a>-->
