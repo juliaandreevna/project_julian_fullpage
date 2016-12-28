@@ -1,65 +1,66 @@
 jQuery(function($) {
 
     // index
-    $('.dev-order-input').focus(function() {
-        $(this).parent().addClass('is-focused has-label');
+    // $('.dev-order-input').focus(function() {
+    //     $(this).parent().addClass('is-focused has-label');
+    //
+    //     var name = $(this).attr("name");
+    //     if (name == "form[name]") {
+    //         $(this).parent().siblings(".uk-icon-user").addClass("des-ico-active-order");
+    //     }
+    //     if (name == "form[tel]") {
+    //         $(this).parent().siblings(".uk-icon-envelope").addClass("des-ico-active-order");
+    //         $(this).parent().siblings(".uk-icon-phone").addClass("des-ico-active-order");
+    //     }
+    // });
 
-        var name = $(this).attr("name");
-        if (name == "form[name]") {
-            $(this).parent().siblings(".uk-icon-user").addClass("des-ico-active-order");
-        }
-        if (name == "form[tel]") {
-            $(this).parent().siblings(".uk-icon-envelope").addClass("des-ico-active-order");
-            $(this).parent().siblings(".uk-icon-phone").addClass("des-ico-active-order");
-        }
-    });
-
-    $('.dev-order-input').blur(function() {
-        $parent = $(this).parent();
-        if ($(this).val() == "") {
-            $parent.removeClass('is-focused has-label');
-            $parent.siblings(".uk-icon-user").removeClass("des-ico-active-order");
-            $parent.siblings(".uk-icon-envelope").removeClass("des-ico-active-order");
-            $parent.siblings(".uk-icon-phone").removeClass("des-ico-active-order");
-        }
-        $parent.removeClass('is-focused');
-    });
+    // $('.dev-order-input').blur(function() {
+    //     $parent = $(this).parent();
+    //     if ($(this).val() == "") {
+    //         $parent.removeClass('is-focused has-label');
+    //         $parent.siblings(".uk-icon-user").removeClass("des-ico-active-order");
+    //         $parent.siblings(".uk-icon-envelope").removeClass("des-ico-active-order");
+    //         $parent.siblings(".uk-icon-phone").removeClass("des-ico-active-order");
+    //     }
+    //     $parent.removeClass('is-focused');
+    // });
 
     // сброс формы
 
-    $('#des_discount_form').on('reset', function(e) {
-        var element = $('.dev-order-input').parent();
-        element.removeClass('has-label');
-        element.siblings(".uk-icon-user").removeClass("des-ico-active-order");
-        element.siblings(".uk-icon-envelope").removeClass("des-ico-active-order");
-        element.siblings(".uk-icon-phone").removeClass("des-ico-active-order");
-        // call modal window after reset form
-        modalWindowApply();
-    });
+    // $('#des_discount_form').on('reset', function(e) {
+    //     var element = $('.dev-order-input').parent();
+    //     element.removeClass('has-label');
+    //     element.siblings(".uk-icon-user").removeClass("des-ico-active-order");
+    //     element.siblings(".uk-icon-envelope").removeClass("des-ico-active-order");
+    //     element.siblings(".uk-icon-phone").removeClass("des-ico-active-order");
+    //     // call modal window after reset form
+    //     modalWindowApply();
+    // });
 
+    // // // // // // // // // 
+// // // ЮЛИАН КОНТАКТЫ // // //
+    // // // // // // // 
 
-
-
-    // foote
+    // footer
     $('.dev-footer-input').focus(function() {
         $(this).parent().addClass('is-focused has-label');
-        var name = $(this).attr("name");
-        if (name == "form[name]") {
-            $(this).parent().siblings(".uk-icon-user").addClass("des-ico-active-footer");
-        }
-        if (name == "form[tel]" || name == "form[email]") {
-            $(this).parent().siblings(".uk-icon-envelope").addClass("des-ico-active-footer");
-            $(this).parent().siblings(".uk-icon-phone").addClass("des-ico-active-footer");
-        }
+        // var name = $(this).attr("name");
+        // if (name == "form[name]") {
+        //     $(this).parent().siblings(".uk-icon-user").addClass("des-ico-active-footer");
+        // }
+        // if (name == "form[tel]" || name == "form[email]") {
+        //     $(this).parent().siblings(".uk-icon-envelope").addClass("des-ico-active-footer");
+        //     $(this).parent().siblings(".uk-icon-phone").addClass("des-ico-active-footer");
+        // }
     });
 
     $('.dev-footer-input').blur(function() {
         $parent = $(this).parent();
         if ($(this).val() == "") {
             $parent.removeClass('is-focused has-label');
-            $parent.siblings(".uk-icon-user").removeClass("des-ico-active-footer");
-            $parent.siblings(".uk-icon-envelope").removeClass("des-ico-active-footer");
-            $parent.siblings(".uk-icon-phone").removeClass("des-ico-active-footer");
+            // $parent.siblings(".uk-icon-user").removeClass("des-ico-active-footer");
+            // $parent.siblings(".uk-icon-envelope").removeClass("des-ico-active-footer");
+            // $parent.siblings(".uk-icon-phone").removeClass("des-ico-active-footer");
         }
         $parent.removeClass('is-focused');
     });
@@ -67,7 +68,7 @@ jQuery(function($) {
 
     // textarea_script
     $('.dev-footer-textarea').focus(function() {
-        $(this).parent().siblings(".uk-icon-pencil").addClass("des-ico-active-footer");
+        // $(this).parent().siblings(".uk-icon-pencil").addClass("des-ico-active-footer");
         $(this).siblings(".dev-footer-label-correct").addClass("des-ico-active-footer");
         $(this).addClass("des-textarea-active-footer");
 
@@ -75,27 +76,36 @@ jQuery(function($) {
 
     $('.dev-footer-textarea').blur(function() {
         if ($(this).val() == "") {
-            $(this).parent().siblings(".uk-icon-pencil").removeClass("des-ico-active-footer");
+            // $(this).parent().siblings(".uk-icon-pencil").removeClass("des-ico-active-footer");
             $(this).siblings(".dev-footer-label-correct").removeClass("des-ico-active-footer");
             $(this).removeClass("des-textarea-active-footer");
         }
     });
 
-    // сброс формы
+    //  сброс формы
 
     $('#des_footer_form').on('reset', function(e) {
         var element = $('.dev-footer-input').parent();
         element.removeClass('has-label');
-        element.siblings(".uk-icon-user").removeClass("des-ico-active-footer");
-        element.siblings(".uk-icon-envelope").removeClass("des-ico-active-footer");
-        element.siblings(".uk-icon-phone").removeClass("des-ico-active-footer");
-        element.siblings(".dev-footer-label-correct").removeClass("des-ico-active-footer");
-        $('.dev-footer-textarea').parent().siblings(".uk-icon-pencil").removeClass("des-ico-active-footer");
-        $('.dev-footer-textarea').siblings(".dev-footer-label-correct").removeClass("des-ico-active-footer");
+        // element.siblings(".uk-icon-user").removeClass("des-ico-active-footer");
+        // element.siblings(".uk-icon-envelope").removeClass("des-ico-active-footer");
+        // element.siblings(".uk-icon-phone").removeClass("des-ico-active-footer");
+        // element.siblings(".dev-footer-label-correct").removeClass("des-ico-active-footer");
+        // $('.dev-footer-textarea').parent().siblings(".uk-icon-pencil").removeClass("des-ico-active-footer");
+        // $('.dev-footer-textarea').siblings(".dev-footer-label-correct").removeClass("des-ico-active-footer");
         $('.dev-footer-textarea').removeClass("des-textarea-active-footer");
         // call modal window after reset form
         modalWindowApply();
     });
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     // modal.dialog
     $('.dev-get-manager-input').focus(function() {

@@ -36,6 +36,7 @@
 <link rel="stylesheet" href="/css/uikit.almost-flat.min.css"/>
 <link rel="stylesheet" href="/css/components/slidenav.almost-flat.min.css"/>
 <link rel="stylesheet" href="/css/components/dotnav.almost-flat.min.css"/>
+<link rel="stylesheet" href="/css/components/notify.gradient.min.css"/>
 <!------------->
 
 
@@ -276,21 +277,23 @@
 <!--<link rel="stylesheet" href="/css/jquery.custom-scrollbar.css">-->
 <!--<script src="/js/jquery-2.1.4.min.js"></script>-->
 <!--<script src="/js/uikit.min.js"></script>-->
-<!--<script src="/js/components/notify.min.js"></script>-->
-<!--<script src="/js/jquery.inputmask.js"></script>-->
-<!--<script>-->
-<!--    $(document).ready(function(){-->
-<!--        $(".phone_us").inputmask("mask", {"mask": "+7 (999) 999-9999"});-->
-<!--        $("[required1]").on("keypress", function () {-->
-<!--            $(this).removeClass("empty");-->
-<!--        });-->
-<!--        $(".submit-succes").on("click", function(){-->
-<!--            $(this).hide();-->
-<!--            return false;-->
-<!--        })-->
-<!--    });-->
-<!--</script>-->
-<!---->
+<script src="/js/components/notify.min.js"></script>
+
+
+<script src="/js/jquery.inputmask.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".phone_us").inputmask("mask", {"mask": "+7 (999) 999-9999"});
+        $("[required1]").on("keypress", function () {
+            $(this).removeClass("empty");
+        });
+        $(".submit-succes").on("click", function(){
+            $(this).hide();
+            return false;
+        })
+    });
+</script>
+
 
 
 <link rel="shortcut icon" href="/favicon/favicon.ico">

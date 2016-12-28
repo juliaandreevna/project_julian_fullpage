@@ -887,6 +887,17 @@ ul.notices li p {
     width: 100%;
 }
 
+.empty{
+    border: 1px solid red !important;
+}
+div.uk-notify{
+    z-index: 101001;
+}
+
+#song>.uk-modal-dialog {
+    margin: 70px auto;
+}
+
 /*скорость старая*/
 
 .order_speed ul.speed li {
