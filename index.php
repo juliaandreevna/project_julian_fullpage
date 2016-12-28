@@ -261,6 +261,7 @@ $photos = collection("Фотогалерея")->find()->toArray();
             </div>
             <div class="conc_org">
                 <p>Организация концертов Юлиана
+                    <img src="/img/phone.svg" alt="">
                     <span> <a href="tel:+7 (926) 492-67-67">+7 (926) 492-67-67</a></span>
                 </p>
             </div>
@@ -866,6 +867,7 @@ $photos = collection("Фотогалерея")->find()->toArray();
                                     <h5 class="que">По всем вопросам организации концертов и выступлений Юлиана:</h5>
                                     <div class="cont_conc_org">
                                         <p>
+                                            <img src="/img/phone.svg" alt="">
                                             <span> <a href="tel:+7 (926) 492-67-67">+7 (926) 492-67-67</a></span>
                                         </p>
                                     </div>

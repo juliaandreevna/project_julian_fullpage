@@ -64,9 +64,6 @@ body:before {
     */
 }
 
-.modal_fixed {
-    background-color: #;
-}
 
 /*СОЦ.СЕТИ*/
 
@@ -1296,7 +1293,7 @@ img.play_img {
 /*display: none;*/
 /*}*/
 
-/*ОРГАНИЗАЦИЯ КОНЦЕНРТОВ ЮЛИАНА*/
+/*ОРГАНИЗАЦИЯ КОНЦЕРТОВ ЮЛИАНА*/
 
 .conc_org {
     margin-top: 20px;
@@ -1310,15 +1307,20 @@ img.play_img {
     text-decoration: none;
 }
 
-.conc_org span:before {
-    content: '';
-    display: inline-block;
-    width: 50px;
-    height: 18px;
-    background: url('/img/phone.svg') no-repeat center;
-    background-size: contain;
-    vertical-align: middle;
+.conc_org img {
+    margin-right: 10px;
+    margin-left: 10px;
 }
+
+/*.conc_org span:before {*/
+    /*content: '';*/
+    /*display: inline-block;*/
+    /*width: 50px;*/
+    /*height: 18px;*/
+    /*background: url('/img/phone.svg') no-repeat center;*/
+    /*background-size: contain;*/
+    /*vertical-align: middle;*/
+/*}*/
 
 /*------------------*/
 /*ОБЩИЕ ДЛЯ СТРАНИЦ*/
@@ -1758,17 +1760,24 @@ img.play_img {
     line-height: 30px;
     text-decoration: none;
     font-weight: 500;
-}
-
-.cont_conc_org span:before {
-    content: '';
-    display: inline-block;
-    width: 50px;
-    height: 30px;
-    background: url('/img/phone.svg') no-repeat center;
-    background-size: contain;
     vertical-align: middle;
 }
+
+.cont_conc_org img {
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 32px;
+}
+
+/*.cont_conc_org span:before {*/
+    /*content: '';*/
+    /*display: inline-block;*/
+    /*width: 50px;*/
+    /*height: 30px;*/
+    /*background: url('/img/phone.svg') no-repeat center;*/
+    /*background-size: contain;*/
+    /*vertical-align: middle;*/
+/*}*/
 
 .contact_mail {
     padding: 30px 20px 30px 20px;
