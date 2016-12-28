@@ -823,8 +823,10 @@ $photos = collection("Фотогалерея")->find()->toArray();
     <!--  Forum  -->
     <!------------->
     <section class="vertical-scrolling">
-        <h2>Форум</h2>
-        <!--        <h3>This is the fourth section</h3>-->
+        <div class="forum_page">
+<!--            <h3 class="uk-text-center h3_section">Форум</h3>-->
+            <IFRAME name=frame src="http://julianradio.forum2x2.ru/" width=1000 height=600></IFRAME>
+        </div>
     </section>
     <!-------------->
     <!-- Contacts -->
