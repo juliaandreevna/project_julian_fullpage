@@ -3,8 +3,8 @@ $home_dir = $_SERVER["DOCUMENT_ROOT"];
 require_once($home_dir . "/admin/bootstrap.php");
 $page_id = "index";
 require_once($home_dir . "/includes/contacts.php");
-$page_title = "Главная";
-$page_suffix = "Julian Radio - ";
+//$page_title = "Главная";
+//$page_suffix = "Julian Radio - ";
 //require_once($home_dir . "/includes/ya-news.php");
 $notices = collection("Анонсы")->find(["public" => true])->toArray();
 $entrys = collection("Биография")->find(["public" => true])->sort(["sort" => 1])->toArray();
@@ -261,7 +261,7 @@ $photos = collection("Фотогалерея")->find()->toArray();
             </div>
             <div class="conc_org">
                 <p>Организация концертов Юлиана
-                    <img src="/img/phone.svg" alt="">
+                    <img src="/img/telephone-receiver-with-circular-arrows.svg" alt="">
                     <span> <a href="tel:+7 (926) 492-67-67">+7 (926) 492-67-67</a></span>
                 </p>
             </div>
@@ -867,7 +867,7 @@ $photos = collection("Фотогалерея")->find()->toArray();
                                     <h5 class="que">По всем вопросам организации концертов и выступлений Юлиана:</h5>
                                     <div class="cont_conc_org">
                                         <p>
-                                            <img src="/img/phone.svg" alt="">
+                                            <img src="/img/telephone-receiver-with-circular-arrows.svg" alt="">
                                             <span> <a href="tel:+7 (926) 492-67-67">+7 (926) 492-67-67</a></span>
                                         </p>
                                     </div>

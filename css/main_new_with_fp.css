@@ -1308,6 +1308,7 @@ img.play_img {
 }
 
 .conc_org img {
+    height: 27px;
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -1766,7 +1767,7 @@ img.play_img {
 .cont_conc_org img {
     margin-right: 10px;
     margin-left: 10px;
-    height: 32px;
+    height: 45px;
 }
 
 /*.cont_conc_org span:before {*/
