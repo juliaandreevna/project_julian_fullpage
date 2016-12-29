@@ -266,10 +266,12 @@ $photos = collection("Фотогалерея")->find()->toArray();
                 <ul class="uk-grid uk-grid-collapse uk-grid-width-small-1-1 uk-grid-width-medium-1-1 uk-grid-width-large-1-3">
                     <li>
                         <div class="fb_news">
-                            <iframe
-                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=300&height=450&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId"
-                                width="300" height="450" style="border:none;overflow:hidden" scrolling="no"
-                                frameborder="0" allowTransparency="true"></iframe>
+<!--                            <iframe-->
+<!--                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=300&height=450&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId"-->
+<!--                                width="300" height="450" style="border:none;overflow:hidden" scrolling="no"-->
+<!--                                frameborder="0" allowTransparency="true"></iframe>-->
+
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FJulian-Radio-238785413187589%2F&tabs=timeline&width=300&height=450&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="300" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                         </div>
                     </li>
                     <li>
@@ -530,13 +532,18 @@ $photos = collection("Фотогалерея")->find()->toArray();
             <div class="contact_panel">
                 <ul class="uk-grid uk-grid-collapse uk-grid-width-small-1-1 uk-grid-width-medium-1-1 uk-grid-width-large-1-2">
                     <li>
-                        <div class="cont_bg1">
+<!--                        <div class="cont_bg1">-->
+                        <div style='background: url(/img/julian/jul_conc.jpg) center no-repeat;
+                                    background-size: cover;
+                                    content: '';
+                                    height: 450px;'">
                             <div class="uk-vertical-align cont_bg2">
-                                <div class="uk-vertical-align-middle contact_text">
-                                    <h5 class="que">По всем вопросам организации концертов и выступлений Юлиана:</h5>
+<!--                                <div class="uk-vertical-align-middle contact_text">-->
+                                <div class="uk-vertical-align-bottom contact_text">
+                                    <h5 class="que">Организация концертов Юлиана:</h5>
                                     <div class="cont_conc_org">
                                         <p>
-                                            <img src="/img/telephone-receiver-with-circular-arrows.svg" alt="">
+                                            <img src="/img/telephone-receiver-with-circular-arrows_white.svg" alt="">
                                             <span> <a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a></span>
                                         </p>
                                     </div>
